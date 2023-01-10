@@ -32,7 +32,7 @@
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
     "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
-    "backend":"cd backend && npm start"
+    "backend":"cd backend && npm install"
   },
   "engines": {
     "node": "16.18.0"
