@@ -31,7 +31,7 @@
     "dev": " concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
-    "build": "cd backend && npm install && cd frontend && npm install && npm run build"
+    "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "engines": {
     "node": "16.18.0"
